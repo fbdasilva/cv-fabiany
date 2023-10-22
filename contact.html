@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        .form-container {
+            min-width: 350px;
+            padding: 20px;
+            background-color: rgba(220, 220, 220, 0.9);
+            color: rgb(45, 45, 45);
+            text-align: center;
+            box-shadow: 1px 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .form-container h3 {
+            font-size: 22px;
+            margin-bottom: 25px;
+            color: rgb(71, 71, 95);
+        }
+
+        .group{
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .group label{
+            color: rgb(71, 71, 95);
+            display: block;
+            font-weight: bold;
+        }
+
+        .group input[type="text"], .group input[type="email"], .group textarea {
+            border: 1px solid rgb(194, 194, 194);
+            border-radius: 2px;
+            padding: 15px;
+            width: 100%;
+        }
+
+        .group textarea {
+            height: 100px;
+            overflow-y: auto;
+        }
+
+        .group button {
+            border: none;
+            cursor: pointer;
+            background-color: rgb(139, 139, 214);
+            color: rgba(255,255,255);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .group button:hover {
+            background-color: rgb(110, 110, 212);
+            transition: 0.5s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form-container"> <!-- Formulário para adicionar os dados para contato -->
+        <h3>Contato</h3>
+        <form>
+            <div class="group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="group">
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="group">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

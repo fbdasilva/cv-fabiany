@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiência</title>
+    <style>
+        .timeline{
+            list-style: none;
+            padding: 0;
+        }
+
+        .event {
+            position: relative;
+            margin-bottom: 10px;
+            padding: 20px;
+            border: 1px solid rgb(202, 201, 203);
+            background-color: rgba(140, 135, 148, 0.2);
+            border-radius: 5px;
+        }
+
+
+        /* Adicionar elemento de decoração no card do evento */
+        .event::before {
+            position: absolute;
+            content: "";
+            top: -5px;
+            left: -5px;
+            width: 20px;
+            height: 20px;
+            background-color: rgb(131, 120, 171);
+            border-radius: 50%;
+        }
+
+        .container h3{
+            font-size: 24px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* seleciona o primeiro elemento do tipo p */
+        .event p:first-child{
+            color: rgb(230, 230, 230);
+            margin-bottom: 5px;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <div id="education" class="container">
+            <h3>Formação Educacional</h3>
+            <ul class="timeline">
+                <li class="event">
+                    <p>Curso de C# e Programação Orientada a Objetos</p>
+                    <p>Udemy | 2019</p>
+                </li>
+                <li class="event">
+                    <p>HTML Web Developer</p>
+                    <p>DIO | 2022</p>
+                </li>
+                <li class="event">
+                    <p>Carrefour Web Developer</p>
+                    <p>DIO | 2022</p>
+                </li>
+                <li class="event">
+                    <p>NDG Linux Essentials</p>
+                    <p>Cisto Networking Academy | 2023</p>
+                </li>
+                <li class="event">
+                    <p>Curso de Tecnologia em Análise e Desenvolvimento de Sistemas</p>
+                    <p>Uninter | 2023-atualmente</p>
+                </li>
+                <li class="event">
+                    <p>Curso de Tecnologia em Telemática</p>
+                    <p>IFPB | 2023-atualmente</p>
+                </li>
+            </ul>
+        </div>
+        <div id="skills" class="container">
+            <h3>Habilidades</h3>
+            <ul class="timeline">
+                <li class="event">
+                    <p>C#, Python, React e Qt Creator</p>
+                </li>
+            </ul>
+        </div>
+        <div id="language" class="container">
+            <h3>Idiomas</h3>
+            <ul class="timeline">
+                <li class="event">
+                    <p>Inglês - Avançado</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

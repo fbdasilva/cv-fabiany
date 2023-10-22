@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header .navbar{
+    padding: 30px 25px;
+    background-color: rgb(46, 42, 58);
+    color: rgb(216, 216, 216);
+    font-size: 16px;
+    border-bottom: 1px solid rgb(216, 216, 216);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100px;
+}
+
+header .navbar ul{
+    display: flex;
+    column-gap: 20px;
+    list-style: none;
+}
+
+.nav-link{
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(216, 216, 216);
+}
+
+.nav-link:hover{
+    color: rgb(139, 139, 214);
+    cursor: pointer;
+}
+
+.title{
+    font-weight: 400;
+    font-size: 26px;
+    color: rgb(131, 120, 171);
+    animation: changeNameColor 4s infinite alternate;
+    position: relative;
+}
+
+.title:hover{
+    cursor: pointer;
+    font-size: 28px;
+    color: rgb(122, 94, 222);
+    animation: none;
+    transition: 0.5s;
+}
+
+/* Animação para mudar a cor da fonte*/
+@keyframes changeNameColor {
+    0% {
+        color: rgb(200, 194, 220);
+    }
+    50% {
+        color: rgb(159, 143, 219);
+    }
+    100% {
+        color: rgb(116, 90, 210);
+    }
+}
+
+body{
+    min-height: 100vh;
+    background-color: rgb(28, 26, 35);
+}
+
+#page-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    min-height: 80vh;
+    color: rgb(216, 216, 216);
+}
+
+.initial-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    animation: change-background 2s infinite alternate;
+}
+
+.initial-content p{
+    color: rgb(130, 130, 130);
+}
+
+.typing{
+    padding: 20px;
+}
+
+.typing h2{
+    font-size: 32px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid rgb(118, 115, 158);
+    animation: typing-effect 2s steps(40, end);
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+/* Animação para criar efeito que o texto está sendo digitado*/
+@keyframes typing-effect {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background-color: rgba(189, 176, 227, 0.5);
+    background: linear-gradient(to bottom, rgb(31, 30, 39), rgb(44, 42, 52));
+    border-top: 0.5px solid rgb(86, 85, 85);
+}
+
+footer ul{
+    display: flex;
+    column-gap: 20px;
+    list-style: none;
+}
+
+.s-link img{
+    height: 32px;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+.s-link img:hover{
+    height: 34px;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(118, 89, 187, 0.2), 0 6px 20px 0 rgba(219, 212, 234, 0.19);
+    background-color: rgb(80, 72, 123);
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        #portfolio-page{
+            display: flex;
+            flex-direction: column;
+            row-gap: 50px;
+        }
+
+        /* Card com informações de cada projeto */
+        .project{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            row-gap: 20px;
+            padding: 20px;
+            border: 1px solid rgb(139, 139, 214);
+            background-color: rgba(154, 126, 199, 0.1);
+            box-shadow: 2px 0px 4px rgb(174, 123, 226);
+            min-width: 500px;
+            font-size: 20px;
+            border-radius: 3px;
+        }
+
+        .project:hover{
+            box-shadow: 2px 0px 15px rgb(174, 123, 226);
+            transition: 0.5s;
+        }
+
+        .project h3{
+            color: rgb(139, 139, 214);
+        }
+
+        .img-container img{
+            border: 1px solid rgb(139, 139, 214);
+            border-radius: 50%;
+            height: 300px;
+            width: 300px;
+        }
+
+        .view-container{
+            display: flex;
+            column-gap: 10px;
+        }
+
+        .btn{
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 6px;
+        }
+
+        .btn a{
+            text-decoration: none;
+            color: rgba(255,255,255);
+        }
+
+        .view{
+            background-color: rgba(139, 139, 214, 0.6);
+        }
+
+        .view:hover{
+            background-color: rgba(110, 110, 212, 0.6);
+            transition: 0.5s;
+        }
+
+        .code{
+            background-color: rgba(255,255,255, 0.8);
+        }
+
+        .code a{
+            color: rgb(110, 110, 212);
+        }
+
+        .code:hover{
+            background-color: rgba(255,255,255, 0.6);
+            transition: 0.5s;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="portfolio-page">
+        <div class="project p1">
+            <h3>Newspace</h3>
+            <div class="img-container">
+                <img src="./images/p1.png">
+            </div>
+            <p>Desenvolvimento de um site para uma revista virtual fictícia.</p>
+            <div class="view-container">
+                <div class="btn view"><a target="_blank" href="https://shimmering-mochi-c79ea7.netlify.app/">Visitar</a></div>
+                <div class="btn code"><a target="_blank" href="https://github.com/fbdasilva/new-space">Github</a></div>
+            </div>
+        </div>
+        <div class="project p2">
+            <h3>SnakeGame</h3>
+            <div class="img-container">
+                <img src="./images/p2.png">
+            </div>
+            <p>Desenvolvimento de um jogo da cobrinha.</p>
+            <div class="view-container">
+                <div class="btn view"><a target="_blank" href="https://aquamarine-quokka-d4df7a.netlify.app/">Visitar</a></div>
+                <div class="btn code"><a target="_blank" href="https://github.com/fbdasilva/snake-game">Github</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
